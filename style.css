@@ -264,6 +264,19 @@ a:hover {
     border-color: rgba(0, 0, 0, .3);
 }
 
+.citation {
+    font-size: 1.3em;
+    font-weight: 600;
+    padding: 0em 5em;
+}
+cite {
+    font-weight: lighter;
+    font-size: 0.8em;
+}
+.text-sm {
+    width: 22em;
+    margin-left: 25%;
+}
 .voffset {
     margin-top: 30px;
 }
@@ -701,7 +714,7 @@ p {
 
 .social {
     max-width: 400px;
-    margin: auto auto auto auto;
+    margin: auto auto 3em auto;
 }
 
 h2 {
