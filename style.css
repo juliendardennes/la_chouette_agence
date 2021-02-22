@@ -264,14 +264,14 @@ a:hover {
     border-color: rgba(0, 0, 0, .3);
 }
 
-.citation {
-    font-size: 1.3em;
-    font-weight: 600;
-    padding: 0em 5em;
+q {
+    font-size: 1.1em;
+    font-weight: bolder;
 }
+
 cite {
     font-weight: lighter;
-    font-size: 0.8em;
+    font-size: 1em;
 }
 .text-sm {
     width: 22em;
@@ -288,6 +288,7 @@ cite {
 .row-no-gutters {
     margin-right: 0;
     margin-left: 0;
+    font-size: 2em;
 }
 
 .row.row-no-gutters > [class^="col-"],
@@ -451,6 +452,10 @@ nav .caret {
 .mg-md {
     margin-top: 10px;
     margin-bottom: 20px;
+}
+
+.tc-white {
+    color: #F3976C;
 }
 
 .mg-lg {
@@ -651,19 +656,22 @@ a[data-lightbox]:hover img {
     color: rgba(0, 0, 0, .5);
     background: none;
 }
-
-h1,
+h1 {
+    color:red;
+}
+p {
+    color: yellow;
+}
+label {
+    color: rgb(201, 123, 136);
+}
 h2,
-h3,
-h4,
-h5,
-h6,
-p,
-label,
-.btn,
-a {
+.btn {
     font-family: "helvetica";
-    font-weight: 400;
+    color: black;
+    font-weight: 500;
+}
+a {
     color: #575757;
 }
 
@@ -690,7 +698,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 1.3em;
 }
 
 .tight-width-whitespace {
@@ -714,7 +722,8 @@ p {
 
 .social {
     max-width: 400px;
-    margin: auto auto 3em auto;
+    margin: auto ;
+
 }
 
 h2 {
@@ -787,7 +796,6 @@ h4 {
     background-color: #F3976C;
 }
 
-
 .btn-atomic-tangerine {
     background: #F3976C;
     color: #FFFFFF;
@@ -798,9 +806,6 @@ h4 {
     color: #FFFFFF;
 }
 
-.ltc-white {
-    color: #F3976C;
-}
 
 .ltc-white:hover {
     color: #cccccc;
