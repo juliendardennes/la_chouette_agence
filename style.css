@@ -656,22 +656,15 @@ a[data-lightbox]:hover img {
     color: rgba(0, 0, 0, .5);
     background: none;
 }
-h1 {
-    color:red;
-}
-p {
-    color: yellow;
-}
-label {
-    color: rgb(201, 123, 136);
-}
+
 h2,
 .btn {
     font-family: "helvetica";
     color: black;
     font-weight: 500;
 }
-a {
+a,
+p {
     color: #575757;
 }
 
