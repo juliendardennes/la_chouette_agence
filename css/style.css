@@ -67,7 +67,7 @@ a:hover {
     right: 0;
 }
 .texture-paper::before {
-    background: url(https://juliendardennes.github.io/lachouetteagence_4_16012021/img/texture-paper.png);
+    background: url("img/texture-paper.webp");
     background-size: 280px 280px;
 }
 .b-parallax {
@@ -487,13 +487,13 @@ h4 {
     color: #c27956;
 }
 .bg-lines-h2-bg {
-    background-image: url(https://juliendardennes.github.io/lachouetteagence_4_16012021/img/lines-h2-bg.png);
+    background-image: url("img/lines-h2-bg.webp");
 }
 .bg-banniere {
-    background-image: url(https://juliendardennes.github.io/lachouetteagence_4_16012021/img/la-chouette-agence-banniere.jpg);
+    background-image: url("img/la-chouette-agence-banniere.webp");
 }
 .bg-presentation {
-    background-image: url(https://juliendardennes.github.io/lachouetteagence_4_16012021/img/image-de-presentation.jpg);
+    background-image: url("img");
 }
 @media (max-width: 1024px) {
     .bloc {
