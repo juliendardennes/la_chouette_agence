@@ -9,7 +9,6 @@ body {
 a,
 button {
     transition: all 0.3s ease-in-out;
-    outline: 0;
 }
 a:hover {
     text-decoration: none;
@@ -46,10 +45,10 @@ a:hover {
 .bg-r-edge,
 .bg-repeat,
 .bg-t-edge {
-    -webkit-background-size: auto;
-    -moz-background-size: auto;
-    -o-background-size: auto;
-    background-size: auto;
+    -webkit-background-size: auto!important;
+    -moz-background-size: auto!important;
+    -o-background-size: auto!important;
+    background-size: auto!important;
 }
 .bg-repeat {
     background: repeat;
@@ -67,12 +66,10 @@ a:hover {
     right: 0;
 }
 .texture-paper::before {
-    background: url("img/texture-paper.webp");
+    background: url(../img/texture-paper.webp);
     background-size: 280px 280px;
 }
-.b-parallax {
-    background-attachment: fixed;
-}
+
 .d-bloc {
     color: rgba(255, 255, 255, 0.7);
 }
@@ -107,10 +104,10 @@ a:hover {
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
-    color: rgba(255, 255, 255, 1);
+    color: #fff;
 }
 .d-bloc .navbar-toggle .icon-bar {
-    background: rgba(255, 255, 255, 1);
+    background: #fff;
 }
 .l-bloc {
     color: rgba(0, 0, 0, 0.5);
@@ -207,14 +204,14 @@ cite {
 }
 .navbar .nav {
     padding-top: 2px;
-    margin-right: -16px;
+    padding-right: 16px;
     float: right;
     z-index: 1;
 }
 .nav > li {
-    float: left;
     margin-top: 4px;
     font-size: 16px;
+    max-width: 100px!important;
 }
 .navbar-nav .open .dropdown-menu > li > a {
     text-align: inherit;
@@ -228,7 +225,7 @@ cite {
     border: 0;
 }
 .navbar-toggle:hover {
-    background: 0 0;
+    background: 0 0!important;
 }
 .navbar-toggle .icon-bar {
     background-color: rgba(0, 0, 0, 0.5);
@@ -267,7 +264,7 @@ cite {
     }
 }
 .nav > li > .dropdown a {
-    background: 0 0;
+    background: 0 0!important;
     display: block;
     padding: 14px 15px;
 }
@@ -280,7 +277,8 @@ cite {
     border-top-color: transparent;
     border-right-color: transparent;
     border-bottom-color: transparent;
-    margin: 6px -5px 0 0;
+    margin: 6px 0 0 0!important;
+    padding-right: 5px;
     float: right;
 }
 .mg-md {
@@ -303,9 +301,6 @@ cite {
     color: #fff;
     background: rgba(0, 0, 0, 0.3);
 }
-button {
-    outline: 0;
-}
 .btn-rd {
     border-radius: 40px;
 }
@@ -316,10 +311,10 @@ button {
     box-shadow: 0 1px 3px rgba(0, 0, 1, 0.25), inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
 }
 .icon-md {
-    font-size: 30px;
+    font-size: 30px!important;
 }
 .icon-lg {
-    font-size: 60px;
+    font-size: 60px!important;
 }
 .sm-shadow {
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
@@ -348,7 +343,8 @@ a[data-lightbox]:hover::before {
     font-size: 32px;
     width: 50px;
     height: 50px;
-    margin-left: -25px;
+    top: 50%;
+    left: 45%;
     border-radius: 50%;
     background: rgba(0, 0, 0, 0.6);
     color: #fff;
@@ -371,7 +367,8 @@ a[data-lightbox]:hover img {
     position: absolute;
     left: 15px;
     right: 15px;
-    bottom: 5px;
+    bottom: 0;
+    margin-bottom: 3px;
 }
 .snapshot-lb .lightbox-caption {
     padding: 0;
@@ -390,6 +387,7 @@ p {
 }
 .container {
     max-width: 1000px;
+    margin: 0 auto!important;
 }
 .hero-bloc-text {
     font-size: 38px;
@@ -401,15 +399,12 @@ p {
     max-width: 600px;
     margin: auto auto auto auto;
 }
-.h1 {
-    font-size: 20px;
-    font-family: "Open Sans";
-}
+
 .cta-hero {
     margin-top: 22px;
-    color: #fff;
+    color: #fff!important;
     text-transform: uppercase;
-    padding: 12px 28px 12px 28px;
+    padding: 12px 28px;
     font-size: 16px;
     font-weight: 700;
 }
@@ -425,25 +420,22 @@ h3 {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #333;
+    color: #333!important;
 }
 .med-width-whitespace {
     max-width: 800px;
-    margin: auto auto auto auto;
+    margin: auto;
     box-shadow: 0 0 0 #000;
 }
 h1 {
-    color: #333;
-}
-h4 {
-    color: #333;
+    color: #f3976c!important;
 }
 .icons {
     margin-bottom: 14px;
     margin-top: 24px;
 }
 .white {
-    color: #fff;
+    color: #fff!important;
 }
 .portfolio-thumb {
     margin-bottom: 24px;
@@ -453,12 +445,12 @@ h4 {
     margin-top: 50px;
 }
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
-    padding: 40px 40px 40px 40px;
+    background-color: rgba(165, 147, 99, 0.9);
+    padding: 40px;
 }
 .bold-link {
     font-weight: 900;
-    text-decoration: underline;
+    text-decoration: underline!important;
 }
 .bgc-white {
     background-color: #fff;
@@ -471,11 +463,11 @@ h4 {
 }
 .btn-atomic-tangerine {
     background: #f3976c;
-    color: #fff;
+    color: #181E35!important;
 }
 .btn-atomic-tangerine:hover {
-    background: #c27956;
-    color: #fff;
+    background: #c27956!important;
+    color: #fff!important;
 }
 .ltc-white:hover {
     color: #ccc;
@@ -484,16 +476,23 @@ h4 {
     color: #f3976c;
 }
 .ltc-atomic-tangerine:hover {
-    color: #c27956;
+    color: #c27956!important;
+}
+.icon-dark-slate-blue {
+    color: #364577!important;
+    border-color: #364577!important;
+}
+.bg-dots-bg {
+    background-image: url(../img/dots-bg.webp);
 }
 .bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.webp");
+    background-image: url(../img/lines-h2-bg.webp);
 }
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.webp");
+    background-image: url(../img/la-chouette-agence-banniere.webp);
 }
 .bg-presentation {
-    background-image: url("img");
+    background-image: url(../img/image-de-presentation.webp);
 }
 @media (max-width: 1024px) {
     .bloc {
