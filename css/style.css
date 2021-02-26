@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    margin: 0.2em;
     padding: 0;
     background: #fff;
     overflow-x: hidden;
@@ -45,10 +45,10 @@ a:hover {
 .bg-r-edge,
 .bg-repeat,
 .bg-t-edge {
-    -webkit-background-size: auto!important;
-    -moz-background-size: auto!important;
-    -o-background-size: auto!important;
-    background-size: auto!important;
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto;
 }
 .bg-repeat {
     background: repeat;
@@ -69,7 +69,10 @@ a:hover {
     background: url(../img/texture-paper.webp);
     background-size: 280px 280px;
 }
-
+.b-parallax {
+    background: center fixed;
+    background-size: cover;
+}
 .d-bloc {
     color: rgba(255, 255, 255, 0.7);
 }
@@ -143,7 +146,7 @@ a:hover {
 .l-bloc h5 a:hover,
 .l-bloc h6 a:hover,
 .l-bloc p a:hover {
-    color: rgba(0, 0, 0, 1);
+    color: #000;
 }
 .l-bloc .navbar-toggle .icon-bar {
     color: rgba(0, 0, 0, 0.6);
@@ -177,7 +180,9 @@ cite {
     padding-left: 0;
 }
 #bloc-1-hero h1 {
+    color: #f3976c;
     font-size: 32px;
+    z-index: 100;
 }
 .navbar {
     margin-bottom: 0;
@@ -185,7 +190,7 @@ cite {
 }
 .navbar-brand {
     height: auto;
-    padding: 3px 15px;
+    padding: 3px 15px 3px 50px;
     font-size: 25px;
     font-weight: 400;
     font-weight: 600;
@@ -285,9 +290,6 @@ cite {
     margin-top: 10px;
     margin-bottom: 20px;
 }
-.tc-white {
-    color: #f3976c;
-}
 .mg-lg {
     margin-top: 10px;
     margin-bottom: 40px;
@@ -319,18 +321,20 @@ cite {
 .sm-shadow {
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
+
 .scrollToTop {
     width: 40px;
     height: 40px;
     position: fixed;
     bottom: 20px;
     right: 20px;
-    opacity: 0;
+    opacity: 1;
     z-index: 500;
     transition: all 0.3s ease-in-out;
 }
 .scrollToTop span {
     margin-top: 6px;
+
 }
 a[data-lightbox] {
     position: relative;
@@ -380,6 +384,7 @@ h2 {
     font-family: helvetica;
     color: #000;
     font-weight: 500;
+    margin: 0.2em;
 }
 a,
 p {
@@ -393,11 +398,13 @@ p {
     font-size: 38px;
 }
 p {
+    margin: 0.3em;
     font-size: 1.3em;
 }
 .tight-width-whitespace {
-    max-width: 600px;
+    font-size: 1.5em;
     margin: auto auto auto auto;
+    color: black;
 }
 
 .cta-hero {
@@ -413,8 +420,9 @@ p {
     margin: auto;
 }
 h2 {
-    font-size: 22px;
+    font-size: 2em;
     line-height: 1.4em;
+    color: white;
 }
 h3 {
     font-size: 15px;
@@ -428,7 +436,7 @@ h3 {
     box-shadow: 0 0 0 #000;
 }
 h1 {
-    color: #f3976c!important;
+    color: white;
 }
 .icons {
     margin-bottom: 14px;
@@ -463,7 +471,7 @@ h1 {
 }
 .btn-atomic-tangerine {
     background: #f3976c;
-    color: #181E35!important;
+    color: black!important;
 }
 .btn-atomic-tangerine:hover {
     background: #c27956!important;
@@ -508,16 +516,6 @@ h1 {
         max-width: 100%;
     }
 }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-    .b-parallax {
-        background-attachment: scroll;
-    }
-}
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
-    .b-parallax {
-        background-attachment: scroll;
-    }
-}
 @media (max-width: 991px) {
     .container {
         width: 100%;
@@ -529,10 +527,6 @@ h1 {
     .page-container {
         overflow-x: hidden;
         position: relative;
-    }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 @media (max-width: 767px) {
@@ -552,9 +546,6 @@ h1 {
     h1,
     h2,
     h3,
-    h4,
-    h5,
-    h6,
     p {
         padding-left: 10px;
         padding-right: 10px;
