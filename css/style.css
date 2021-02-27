@@ -307,7 +307,6 @@ cite {
     border-radius: 40px;
 }
 .btn-clean {
-    color: red;
     border: 1px solid rgba(0, 0, 0, 0.08);
     border-bottom-color: rgba(0, 0, 0, 0.1);
     text-shadow: 0 1px 0 rgba(0, 0, 1, 0.1);
@@ -356,7 +355,6 @@ a[data-lightbox]:hover::before {
     font-weight: 100;
     z-index: 1;
     position: absolute;
-    top: 50%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
 }
@@ -403,6 +401,7 @@ p {
     font-size: 1.3em;
 }
 .tight-width-whitespace {
+    max-width: 600px;
     font-size: 1.5em;
     margin: auto auto auto auto;
     color: black;
@@ -410,7 +409,6 @@ p {
 
 .cta-hero {
     margin-top: 22px;
-    color: red!important;
     text-transform: uppercase;
     padding: 12px 28px;
     font-size: 16px;
@@ -422,7 +420,6 @@ p {
 }
 h2 {
     font-size: 1.7em;
-    line-height: 1.4em;
     color: #575757;
 }
 .bloc-3 h2 {
@@ -435,13 +432,10 @@ h2 {
 .bloc-3 a {
     color: White;
 }
-#bloc-4-portfolio h3 {
-    align-items: center;
-    font-size: 1em;
+#bloc-4-portfolio p {
+    font-size: 0.8em;
 }
-#bloc-4-portfolio img {
-    margin-left: 3em;
-}
+
 #bloc-5-cta h2 {
     color: #f3976c;
 }
@@ -466,17 +460,9 @@ h1 {
 .white {
     color: #fff!important;
 }
-.portfolio-thumb {
-    margin-bottom: 24px;
-}
-.portfolio-row {
-    margin-bottom: 44px;
-    margin-top: 50px;
-}
 .black-background {
-    background-color: rgba(165, 147, 99, 0.9);
+    background-color: rgba(165, 147, 99, 0.7);
     padding: 40px;
-    margin: 1em 10em;
 }
 .bold-link {
     font-weight: 900;
@@ -558,8 +544,9 @@ h1 {
         margin-right: auto;
     }
     .img-responsive {
-        margin-left: auto;
-        margin-right: auto;
+        border: 3px solid blue;
+        margin-left: 10%;
+        margin-right: 50%;
     }
     .page-container {
         overflow-x: hidden;
