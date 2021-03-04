@@ -365,15 +365,15 @@ a[data-lightbox]:hover img {
     color: #fff;
     background: rgba(0, 0, 0, 0.5);
     position: absolute;
-    left: 15px;
-    right: 15px;
+    left: 10px;
+    right: 10px;
     bottom: 0;
     margin-bottom: 3px;
 }
 .snapshot-lb .lightbox-caption {
     padding: 0;
-    color: rgba(0, 0, 0, 0.5);
-    background: 0 0;
+    color: black;
+    background: #fff;
 }
 .btn,
 h2 {
@@ -420,7 +420,7 @@ h2 {
     color: #575757;
 }
 .bloc-3 h2 {
-    color: #f3976c;
+    color: #fff;
     font-size: 1.1em;
 }
 .bloc-3 p {
